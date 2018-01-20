@@ -8,6 +8,7 @@ namespace LoginSys.Models
 {
     public class Branch
     {
+        //JUST TO TEST GITHUB FOR TRAINING PURPOSE
         [Key]
         public int BrID { get; set; }
         public string BrName { get; set; }
