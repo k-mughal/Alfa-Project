@@ -1,0 +1,82 @@
+﻿@model LoginSys.Models.Employees
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employees</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpGener)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpGener)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpFName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpFName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpLName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpLName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
